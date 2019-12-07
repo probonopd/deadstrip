@@ -1,0 +1,8 @@
+language: cpp
+compiler: gcc
+sudo: require
+dist: trusty
+
+script:
+  - make -j$(nproc)
+  - make dogfood
